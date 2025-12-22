@@ -27,4 +27,17 @@
     select * from students limit 5 offset 5 * 1  --> this will show 2nd 5 data when user click 2
     select * from students limit 5 offset 5 * 2  --> this will show 3rd 5 data when user click 3
 
+# UPDATE
 
+    update students set email = "default@gmail.com" where email is  null
+    -> this will change null value email as "default@gmail.com"
+
+    -------------------------------------
+
+    update students set first_name = "Ariful", age = 20 where student_id = 1
+    -> this will change first student specified value
+
+    ----------------------------------------------
+
+    update students set grade = "C" where student_id in (1,2)
+    -> this will change first and second student grade value to C
