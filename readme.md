@@ -21,7 +21,7 @@
 
     select * from students limit 5 offset 2 (eita 5 ta row  dibe but first 2 ta bad diye dibe )
 
-> what to do to show pagination data !!
+# what to do to show pagination data !!
 
     select * from students limit 5 offset 5 * 0  --> this will show first 5 data when user click 1
     select * from students limit 5 offset 5 * 1  --> this will show 2nd 5 data when user click 2
@@ -46,3 +46,19 @@
 
     delete from students where grade = "C"
     delete from students where age > 20 and grade = "B+"
+
+# GROUP BY
+
+    select country from students group by country
+
+    select country,avg(age) from students group by country
+
+## count students by country
+
+    select country,count(*) from students group by country
+
+## count students by grade
+
+    select grade,count(*) from students group by grade
+
+    <!-- group by operator cannot give multiple data .. it only return one data -->
