@@ -62,3 +62,13 @@
     select grade,count(*) from students group by grade
 
     <!-- group by operator cannot give multiple data .. it only return one data -->
+
+## courses that minimum 4 student enrolled (je course e 4 jon er besi student ase)
+
+> group by having
+
+    select courses,count(*) from students group by courses having count(*) > 4
+
+## countries where average student age is greater than 21
+
+    select country,avg(age) from students group by country having avg(age) > 21
