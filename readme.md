@@ -41,3 +41,8 @@
 
     update students set grade = "C" where student_id in (1,2)
     -> this will change first and second student grade value to C
+
+# DELETE
+
+    delete from students where grade = "C"
+    delete from students where age > 20 and grade = "B+"
