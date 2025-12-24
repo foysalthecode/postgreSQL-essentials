@@ -72,3 +72,7 @@
 ## countries where average student age is greater than 21
 
     select country,avg(age) from students group by country having avg(age) > 21
+
+# FOREIGN KEY
+
+    uniquley identifies row to another table which is connected to the row of this table
