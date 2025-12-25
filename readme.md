@@ -76,3 +76,10 @@
 # FOREIGN KEY
 
     uniquley identifies row to another table which is connected to the row of this table
+
+# INNER JOIN
+
+    inner join ---> it contains only the value who maintain the conditions..if it gets any null
+    value then inner join will remove the row
+
+    
