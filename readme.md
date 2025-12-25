@@ -82,4 +82,18 @@
     inner join ---> it contains only the value who maintain the conditions..if it gets any null
     value then inner join will remove the row
 
-    
+# LEFT JOIN
+
+    left join --> it contains everything---like if we use this method then it will join 2 table
+    and will include null value also ---- it will prioritize only the primary table and second
+    table remain null
+
+# RIGHT JOIN
+
+    right join --> it is oposite of left join and remain left side table null if condition not met
+    and data not found
+
+# FULL JOIN
+
+    full join ---> it will retrive all rows in a tableee if the value is null it will also
+    retrive the null things
